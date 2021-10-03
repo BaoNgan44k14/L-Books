@@ -1,0 +1,53 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: 'Beyond';
+    src: url(../fonts/beyond_the_mountains.otf) format('truetype'), url(../fonts/beyond_the_mountains.otf) format('opentype');
+}
+ :root {
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --ffer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    color: #a5a5a5;
+    overflow-x: hidden;
+    
+}
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+.form-message {
+    margin: 2px 0 0 5px;
+    color: red;
+}
+.text-center {
+    margin: 0;
+}
+.card:hover{
+    box-shadow: 7px 11px 21px -3px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 7px 11px 21px -3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 7px 11px 21px -3px rgba(0,0,0,0.51);
+    transition: 0.5S;
+}

@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LayoutHome.master.cs" Inherits="Views_Shared_LayoutHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>L-Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="../../library/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../library/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <link href="../../assets/css/Base.css" rel="stylesheet" />
+    <link href="../../assets/css/Grid.css" rel="stylesheet" />
+    <link href="../../assets/css/Style.css" rel="stylesheet" />
+    <link href="../../assets/css/Responsive.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header">
+        <div class="header__topbar">
+            <div class="container header__topbar__container">
+                <ul class="header__topbar__container--authercation">
+                    <li><a href="../User/Login.aspx">Login</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="../User/Register.aspx">Register</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="header__navbar">
+            <div class="container header__navbar__container">
+                <div class="row align-items-center ">
+                    <div class="col-3 header__navbar__container--logo">
+                        <a href="#">
+                            <img src="" />L-Books</a>
+                    </div>
+
+                     <div class="col-6">
+                        <ul class="header__navbar__container--list d-flex">
+                          <li><a href="../Home/Home.aspx">Trang Chủ</a></li>
+                          <li><a href="../Home/Products.aspx">Sách</a></li>
+                          <li><a href="../Home/About.aspx">Giới Thiệu</a></li>
+                          <li><a href="../Home/Contact.aspx">Liên Hệ</a></li>
+                        </ul>
+                      </div>     
+                    
+                    <div class="col-3">
+                        <div class="header__navbar__container--icon d-flex">
+                            <div class="header__navbar__container--search d-flex">
+                               
+                                 <i class="fas fa-search" id="search"></i>
+                            </div>
+                            <div class="header__navbar__container--cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="header__navbar__container--user">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </nav>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <footer class="footer ">
+            <div class="container-fluid py-5">
+                <div class="row pt-5">
+                    <div class="col-lg-11 m-auto">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h3 class="footer__heading pb-3">THỂ LOẠI</h3>
+                                <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Tiểu thuyết</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Truyện Tranh</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Giáo Trình</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Thiếu Nhi</a>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-lg-2">
+                            <h3 class="footer__heading pb-3">XUẤT XỨ</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Trung Quốc</a>
+                                </li>
+                                <li class="footer__list-item">   
+                                    <a href="" class="footer__list-link">Hàn Quốc</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Việt Nam</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Nhật Bản</a>
+                                </li>
+                            </ul>
+                        </div>
+                            <div class="col-lg-2">
+                                <h3 class="footer__heading pb-3">SITE MAP</h3>
+                                <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Trang Chủ</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Sách</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Sách bán chạy</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Giới Thiệu</a>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-lg-2">
+                            <h3 class="footer__heading pb-3">GIẢI ĐÁP</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Cách thức mua hàng</a>
+                                </li>
+                                <li class="footer__list-item">   
+                                    <a href="" class="footer__list-link">Chế độ giao hàng</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Đặt hàng qua tổng đài</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <h3 class="footer__heading pb-3">THÔNG TIN</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Tuyển dụng</a>
+                                </li>
+                                <li class="footer__list-item">   
+                                    <a href="" class="footer__list-link">Điều khoản</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a href="" class="footer__list-link">Chính Hãng</a>
+                                </li>
+                            </ul>
+                        </div>
+                            
+                        <div class="col-lg-2">
+                            <h3 class="footer__heading pb-3">THEO DÕI</h3>
+                             <div class="footer__container__about--social">
+                                <ul>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-bottom: 0.5rem;"/>
+            <p class="text-center">Coding @2021 by Group-2 from DaNang University of Economics</p>
+        </footer>
+
+    </div>
+    </form>
+</body>
+</html>
