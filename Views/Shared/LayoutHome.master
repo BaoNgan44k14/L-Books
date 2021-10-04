@@ -55,13 +55,29 @@
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
                             <div class="header__navbar__container--user">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user">
+                                    <div class="header__navbar--user">
+                                        <ul class="header__navbar-user-menu">
+                                            <li class="header__navbar-user-menu-items">
+                                                <a href="">Thông tin tài khoản</a>
+                                            </li>
+                                            <li class="header__navbar-user-menu-items">
+                                                <a href="">Đổi mật khẩu</a>
+                                            </li>
+                                            <li class="header__navbar-user-menu-items">
+                                                <a href="">Đăng xuất</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </i>
+
                             </div>
                         </div>
                     </div>      
                 </div>
             </div>
         </nav>
+        
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

@@ -90,6 +90,61 @@
     color: var(--yellow);
     
 }
+.header__navbar-user-menu {
+    height: 100%;
+    padding: 0 20px;
+    margin: 0;
+   
+}
+.header__navbar--user {
+    text-transform: capitalize;
+    position: absolute;
+    top: calc(100% - 40px);
+    right: 90px;
+    height: 90%;
+    min-width: 15%;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    box-shadow: 0 1px 3rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    opacity: 0;
+    display: none;
+    
+}
+
+/*Thanh tam giác*/
+.header__navbar--user:before{
+    content: "";
+    border-style:  solid;
+    border-width: 20px 25px;
+    border-color: transparent transparent var(--white-color) transparent;
+    /* transparent: trong suốt */
+    position: absolute;
+    top: -27px;
+    right: 0;
+}
+.header__navbar__container--user i:hover .header__navbar--user {
+    display: block;
+    opacity: 1;
+   
+}
+.header__navbar-user-menu-items {
+    height: 30%;
+    border-bottom: 0.5px solid rgb(218, 218, 218);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+.header__navbar-user-menu-items a {
+    color: #51545f;
+    font-size: 1rem;
+    line-height: 40px;
+}
+.header__navbar-user-menu-items a:hover {
+    color: var(--yellow);
+}
+
 /*home*/
 .home__background {
     width: 100%;
@@ -611,9 +666,14 @@
     background-size: cover;
 }
 .Product__catalogue {
+    height: 200px;
     width: 100%;
     background: var(--bg-section);
     position: relative;
+}
+.Product__catalogue--container, 
+.Product__search {
+    height: 100%;
 }
 .Product__catalogue__container {
     position: absolute;
@@ -662,7 +722,178 @@
 .Product__catalogue__container__tab span {
 
 }
+.Product__search__container {
+    height: 100%;
+    align-items: center;
+}
+.Product__search__container--item {
+    margin-bottom: 10px;
+}
+.Product__search__container--item span {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 600;
+}
+.Product__search__container--search__txt {
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #929191;
+}
+.Product__search__container--search--dd {
+    width: 100%;
+    height: 46px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #929191
+}
+.Product__search__container--search--dd option {
+    width: 100%;
+    height: 71px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #929191
+}
+.Product__search__container--btn {
+    height: 53px;
+    background-color: var(--btn-black);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 53px;
+    line-height: 53px;
+    margin-top: 30px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.Product__search__container--btn a {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.Product__search__container--btn:hover {
+    opacity: .9;
+}
+.Product__search__container--btn span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5.75px;
+    height: 5.63px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-top: 1%;
+}
 
+.Product__search__container--btn span:nth-child(3) {
+    opacity: .6;
+    margin-left: 0;
+}
+
+.Product__search__container--btn span:last-child {
+    opacity: .4;
+    margin-left: 0;
+    margin-right: 0;
+}
+/*Sản phẩm*/
+.Product__offers {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.Product__offers__container--item {
+    position: relative;
+    top: 0;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+.Product__offers__container--item:hover {
+    top: -5px;
+}
+.Product__offers__container--item__img {
+    width: 100%;
+    height: 300px;
+}
+.Product__offers__container--item__inform h4 {
+    font-weight: 700;
+    color: var(--violet);
+    margin: 10px  0 10px 10px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+   
+}
+.Product__offers__container--item__inform p {
+    margin: 10px;
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.Product__offers__container--item__price {
+    margin: 15px;
+}
+.item__icons i {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.Product__offers__container--item__btn {
+    height: 100%;
+    align-self:center;
+}
+.Product__offers__container--item__btn i {
+    color: var(--white-color);
+}
+
+/*pagination*/
+.Product__offers__pagination {
+    display:flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.Product__offers__pagination a {
+    color: #ccc;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    --height: 30px;
+    min-width: var(--height);
+    margin: 0 15px;
+    text-align: center;
+    line-height: var(--height);
+    height: var(--height);
+    border-radius: 50%;
+    
+}
+.Product__offers__pagination i {
+    color: #ccc;
+    
+}
+.Product__offers__pagination i:hover,
+.Product__offers__pagination a:hover {
+    color: var(--violet);
+   
+}
+
+.Product__offers__pagination--item.active a {
+    background-color: var(--yellow);
+    color: var(--white-color);
+    
+}
 
 
 
