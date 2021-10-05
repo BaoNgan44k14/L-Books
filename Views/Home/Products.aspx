@@ -89,7 +89,7 @@
                         <div class="Product__offers__container--item">
                             <div class="card">
                             <div class="Product__offers__container--item__inform">
-                                <a href="#" class="zoom">
+                                <a href="../Products/Detail.aspx" class="zoom">
                                     <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
                                 </a>    
                                 <h4>5 centimet trên giây</h4>

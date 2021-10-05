@@ -1,6 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/LayoutHome.master" AutoEventWireup="true" CodeFile="Detail.aspx.cs" Inherits="Views_Products_Detail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
       <section class="Contact d-flex align-items-center ">
@@ -116,5 +150,460 @@
         </div>
     </section>
 
+    <div class="Another__products">
+        <h1 class="Another__products__title">Tham khảo thêm</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="container"> 
+        <div class="Another__products__container">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                                <div class="card">
+                                <div class="Product__offers__container--item__inform">
+                                    <a href="#" class="zoom">
+                                        <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                                    </a>    
+                                    <h4>5 centimet trên giây</h4>
+                                    <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                                mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                                đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                                    <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                        <div class="Product__offers__container--item__icons">
+                                            <div class="item__icons meta-item ">
+                                                <i class="fas fa-tags"></i>
+                                                <span class="meta-value">150.000 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-heart"></i>
+                                                <span class="meta-value">24 </span>
+                                            </div>
+                                            <div class="item__icons meta-item">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <span class="meta-value">125 </span>
+                                            </div>
+                                        </div>
+                                        <div class="Product__offers__container--item__btn">
+                                        <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                        <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <div class="Product__offers__container--item">
+                        <div class="card">
+                        <div class="Product__offers__container--item__inform">
+                            <a href="#" class="zoom">
+                                <img class="Product__offers__container--item__img" src="https://bloganchoi.com/wp-content/uploads/2019/08/5-tren-giay.jpg">
+                            </a>    
+                            <h4>5 centimet trên giây</h4>
+                            <p>5cm/s không chỉ là vận tốc của những cánh anh đào rơi, 
+                                        mà còn là vận tốc khi chúng ta lặng lẽ bước qua đời nhau, 
+                                        đánh mất bao cảm xúc thiết tha nhất của tình yêu.</p>
+                            <div class="Product__offers__container--item__price d-flex justify-content-between">
+                                <div class="Product__offers__container--item__icons">
+                                    <div class="item__icons meta-item ">
+                                        <i class="fas fa-tags"></i>
+                                        <span class="meta-value">150.000 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="meta-value">24 </span>
+                                    </div>
+                                    <div class="item__icons meta-item">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="meta-value">125 </span>
+                                    </div>
+                                </div>
+                                <div class="Product__offers__container--item__btn">
+                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>     
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>   
+        
+    </div>
+
+    
 </asp:Content>
 
