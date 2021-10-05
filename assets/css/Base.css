@@ -5,6 +5,7 @@
     src: url(../fonts/beyond_the_mountains.otf) format('truetype'), url(../fonts/beyond_the_mountains.otf) format('opentype');
 }
  :root {
+    --text-color: #333;
     --primary-color: #fa9e1b;
     --white-color: #fff;
     --violet: #8d4fff;

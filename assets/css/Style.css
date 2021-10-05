@@ -894,14 +894,146 @@
     color: var(--white-color);
     
 }
+/*detail*/
+.Detail {
+    margin: 50px 0;
+}
+.Detail__container.row {
+    padding-left: 0 !important;
+}
+.Detail__container__image {
+   align-items: center;
+}
+.Detail__container__image--seclect img {
+    
+    margin-bottom: 5px;
+    width: 100%
+}
+.Detail__container__image--banner {
+   overflow: hidden;
+   display: flex;
+   transition: all 0.5s ease;
+}
+.Detail__container__image--banner img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+.img-items:hover{
+    opacity: 0.8;
+}
 
+/*detail description*/
+.Detail__container__content {
+    padding-left: 30px;
+}
+.Detail__title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--violet);
+    font-weight: 700;
+    line-height:  1;
+    font-family: "Trump Gothic East Bold",'Helvetica Neue',Helvetica,Arial,sans-serif;
 
+}
+.Detail__line {
+    width: 80px;
+    height: 4px;
+    background-color: #444;
+    border-radius: 10px;
+}
+.Detail__genre {
+    background-image: var(--bg-section);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    width: 50%;
+    padding: 0 0 0 4px;
+    color: var(--white-color);
+    line-height: 1.4;
+    font-family: "Trump Gothic East Bold",'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.Detail__rating i {
+    color: var(--yellow);
+   
+}
+.Detail__rating i:first-child{
+    opacity: .6;
+}
+.Detail__rating i:nth-child(2) {
+    opacity: .75;
+}
+.Detail__rating i:nth-child(3) {
+    opacity: .85;
+}
+.Detail__price {
+    margin: 20px 0;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 0.5;
+}
+.Detail__price--old span{
+    opacity: .7;
+    color: red;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.Detail__price--new span {
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+.Detail__description--title {
+    margin: 30px 0;
+    color:var(--text-color);
+    font-weight: 600;
+    font-family: "Trump Gothic East Bold",'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.Detail__description--detail__table {
+    padding-left: 10px;
+}
+.Detail__purchase {
+    margin: 30px 0;
+
+}
+.Detail__purchase .btn, input {
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.txt_soluong {
+    width: 60px;
+}
+.btn_addcart {
+    background-image: var(--bg-section);
+    color: var(--white-color);
+}
+.btn_buy {
+    border: 5px solid var(--btn-black);
+    color: var(--btn-black);
+    /*background-color: var(--btn-black);*/
+}
+.Detail__purchase .btn:hover {
+    opacity: .9;
+}
+.btn_addcart:hover {
+    color: var(--white-color);
+}
+.btn_buy:hover {
+    background-color: var(--btn-black);
+    color: var(--white-color);
+}
 
 /*footer*/
 .footer {
     background-color: #31124b;
     border-top: 2px solid #e43;
-   
 }
 .footer__heading {
     font-size: 1.2rem;
