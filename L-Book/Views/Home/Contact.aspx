@@ -21,10 +21,10 @@
                                 <h2>Phản hồi ý kiến của bạn</h2>
                             </div>
                             <div class="contact__form" id="txt_message">
-                                <asp:TextBox ID="txt_name" runat="server" placeholder="Name" class="contact_form_name"></asp:TextBox>
-                                <asp:TextBox ID="txt_email" runat="server" placeholder="E-mail" class="contact_form_email"></asp:TextBox>
-                                <asp:TextBox ID="txt_subject" runat="server" placeholder="Subject" class="contact_form_subject"></asp:TextBox>
-                                <asp:TextBox ID="txt_message" runat="server" placeholder="Message" TextMode="MultiLine" MaxLength="50" Rows="10" Columns="30"></asp:TextBox>
+                                <asp:TextBox ID="txt_name" runat="server" placeholder="Họ Tên" class="contact_form_name"></asp:TextBox>
+                                <asp:TextBox ID="txt_email" runat="server" placeholder="Email" class="contact_form_email"></asp:TextBox>
+                                <asp:TextBox ID="txt_subject" runat="server" placeholder="Bạn muốn chúng tôi cải thiện điều gì?" class="contact_form_subject"></asp:TextBox>
+                                <asp:TextBox ID="txt_message" runat="server" placeholder="Biện pháp đề xuất" TextMode="MultiLine" MaxLength="50" Rows="10" Columns="30"></asp:TextBox>
                                 <div class="row">
                                     <div class="col-12 text-center ">
                                         <button class="form_submit_button">Gửi phản hồi

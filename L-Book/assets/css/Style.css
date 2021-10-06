@@ -17,6 +17,7 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    
 }
 .header__topbar__container--authercation a {
     color: var(--white-color);

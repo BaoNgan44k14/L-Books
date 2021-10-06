@@ -12,6 +12,7 @@
     <link href="../../assets/css/Grid.css" rel="stylesheet" />
     <link href="../../assets/css/Style.css" rel="stylesheet" />
     <link href="../../assets/css/Responsive.css" rel="stylesheet" />
+    <link href="../../assets/css/Action.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -20,10 +21,14 @@
     <div class="header">
         <div class="header__topbar">
             <div class="container header__topbar__container">
-                <ul class="header__topbar__container--authercation">
+                <ul class="header__topbar__container--authercation  header__topbar__nologin">
                     <li><a href="../User/Login.aspx">Login</a></li>
                     <li><a href="#">|</a></li>
                     <li><a href="../User/Register.aspx">Register</a></li>
+                </ul>
+
+                <ul class="header__topbar__container--authercation header__topbar__userlogin">
+                    <li><a href="#">Nguyễn Thị Bảo Ngân</a></li>
                 </ul>
             </div>
         </div>
@@ -197,6 +202,6 @@
 
     </div>
     </form>
-    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/Main.js"></script>
 </body>
 </html>
