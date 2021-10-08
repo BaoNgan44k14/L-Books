@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/LayoutHome.master" AutoEventWireup="true" CodeFile="Detail.aspx.cs" Inherits="Views_Products_Detail" %>
 
+<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <style>
@@ -37,7 +39,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-      <section class="Contact d-flex align-items-center ">
+     <section class="Contact d-flex align-items-center ">
         <div class="container">
             <div class="Contact__title">
                 <h1>DETAIL</h1>
@@ -51,33 +53,22 @@
                 <div class="Detail__container__image col-7">
                     <div class="row">
                         <div class="col-2 Detail__container__image--seclect">
-                            <div class="img-items" data-id ="1">
-                                <a href="#">
-                                <img src="../../assets/images/5cm(1).jpg" />
-                                </a>
+                            <div class="img-items" data-id ="1">   
+                                <img src="../../assets/images/5cm(1).jpg" onclick="imgdetail(this)"/>
                             </div>
-                            <div class="img-items" data-id ="2">
-                                <a href="#">
-                                <img src="../../assets/images/5cm(4).jpg" />
-                                </a>
+                            <div class="img-items" data-id ="2">              
+                                <img src="../../assets/images/5cm(4).jpg" onclick="imgdetail(this)"/>
                             </div>
-                            <div class="img-items" data-id ="3">
-                                <a href="#">
-                                <img src="../../assets/images/5cm(5).png" />
-                                </a>
+                            <div class="img-items" data-id ="3">                           
+                                <img src="../../assets/images/5cm(5).png" onclick="imgdetail(this)"/>
                             </div>
                             <div class="img-items" data-id ="4">
-                                <a href="#">
-                                <img src="../../assets/images/5cm(6).png" />
-                                </a>
+                                <img src="../../assets/images/5cm(6).png" onclick="imgdetail(this)"/> 
                             </div>
                 
                         </div>
                         <div class="col-10 Detail__container__image--banner">
-                            <img src="../../assets/images/5cm(1).jpg" />
-                            <img src="../../assets/images/5cm(4).jpg" />
-                            <img src="../../assets/images/5cm(5).png" />
-                            <img src="../../assets/images/5cm(6).png" />
+                            <img src="../../assets/images/5cm(1).jpg" id="imageslide"/>
                         </div>
                     </div>
                 </div>
@@ -87,11 +78,12 @@
                       <div class="Detail__line"></div>
                       <h4 class = "Detail__genre">Tiểu thuyết, lãng mạn</h4>
                       <div class = "Detail__rating">
+                       <dx:ASPxRatingControl ID="ASPxRatingControl1" runat="server" Theme="SoftOrange"></dx:ASPxRatingControl>
+                      <%--  <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>--%>
                         <span>4.7 (21)</span>
                       </div>
 
@@ -138,8 +130,8 @@
                             </div>
                         </div>
                       </div>
-                        
                       <div class = "Detail__purchase">
+                        
                         <asp:TextBox ID="txt_soluong" CssClass="txt_soluong" runat="server" TextMode="Number" min="1">1</asp:TextBox>
                         <asp:Button ID="btn_addcart" CssClass="btn_addcart btn" runat="server" Text="Thêm vào giỏ hàng" />
                         <asp:Button ID="btn_buynow" CssClass="btn_buy btn" runat="server" Text="Mua ngay" />
@@ -579,7 +571,7 @@
                                     </div>
                                 </div>
                                 <div class="Product__offers__container--item__btn">
-                                <a href="#" class="btn btn-outline-primary ">Mua</i></a>
+                                <a href="#" class="btn btn-outline-primary ">Mua</a>
                                 <a href="#" class="btn btn-primary "><i class="fas fa-cart-plus"></i></i></a>
                                 </div>
                             </div>
@@ -604,6 +596,13 @@
         
     </div>
 
+    <script>
+        function imgdetail(smaillImg) {
+
+            var fullImg = document.getElementById("imageslide");
+            fullImg.src = smaillImg.src;
+        }
+    </script>
     
 </asp:Content>
 

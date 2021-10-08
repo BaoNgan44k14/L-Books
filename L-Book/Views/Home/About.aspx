@@ -4,13 +4,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    <section class="About d-flex align-items-center ">
-        <div class="container py-5">
-        <div class="row py-4">
-            <div class="text-center text-white align-item-center">
-                <h1 class="logo">VỀ CHÚNG TÔI</h1>
-                <p>Nơi cung cấp cho bạn các thể loại sách mới nhất trong những năm qua <br /> Đưa bạn vào một thế giới tri thức</p>
-            </div>
-        </div>
+        <div class="container">
+            <div class="Contact__title ">
+                <h1>About</h1>
+            </div> 
         </div>
     </section>
 

@@ -512,12 +512,11 @@
 }
 
 /*About*/
-.About{
-    height: 80vh;
+.About {
+    height: 70vh;
     width: 100%;
-    background: linear-gradient(rgba(64, 6, 97, 0.2), rgba(64, 6, 97, 0.2)), url(https://th.bing.com/th/id/R.a4dbb0e2153cc2835c36fec6b4fe003c?rik=%2fvptZWlNy9F7tQ&pid=ImgRaw&r=0) no-repeat;
+    background: linear-gradient(rgba(64, 6, 97, 0.2), rgba(64, 6, 97, 0.2)), url(https://www.danvilleva.gov/ImageRepository/Document?documentID=25791) no-repeat;
     background-size: cover;
-    font-family: 'Lobster', cursive;
 }
 .intro__container {
     margin: 100px 0;
@@ -865,6 +864,7 @@
     display:flex;
     justify-content: center;
     margin: 50px 0;
+    
 }
 .Product__offers__pagination a {
     color: #ccc;
@@ -920,8 +920,14 @@
     height: 100%;
     margin-right: 20px;
 }
+    
+.img-items{
+    cursor: pointer;
+    opacity: 0.7;
+}
 .img-items:hover{
-    opacity: 0.8;
+    opacity: 1;
+  
 }
 
 /*detail description*/
@@ -1070,6 +1076,167 @@
     border: 2px solid;
     border-radius: 10px;
     margin-left: 50px !important;
+}
+
+
+/*Cart*/
+.Cart {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(rgba(64, 6, 97, 0.2), rgba(64, 6, 97, 0.2)), url(https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/08/28/Pictures/_df443a94-e8dd-11ea-b931-a708c0ef05a7.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.Cart__title {
+    font-size: 72px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 120px;
+}
+.Cart__title h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.Cart__Product__table {
+    text-align: center;
+}
+.Cart__Product__table__nav {
+    background-image: var(--bg-section);
+    height: 50px;
+    vertical-align: middle !important;
+}
+.Cart__Products__title {
+    font-size: 1rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    
+}
+.Cart__Products__tab td {
+    vertical-align: middle;
+    color: var(--text-color);
+    
+}
+.Cart__Products__tab h6 {
+    font-size: 1rem;
+    margin: 0;
+}
+.Cart__Product__tab--counter {
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #999;
+    padding: 0 0 0 10px;
+    width: 50px;
+    height: 35px;
+}
+.Cart__Product__tab--delete {
+    background: none;
+    border: none;
+}
+.Cart__Product__tab--delete i {
+    font-size: 1.5rem;
+    color: #555;
+}
+.Cart__Products__checkout ul{
+    border: 2px solid #ebebeb;
+    background: #f3f3f3;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:16px;
+    padding-bottom: 20px;
+}
+.Cart__Products__checkout ul li{
+    list-style: none;
+    font-size:16px;
+    font-weight: bold;
+    color:#252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.Cart__Products__checkout ul li.subtotal{
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom:1px solid #fff;
+    padding-bottom: 14px;
+}
+.Cart__Products__checkout ul li.subtotal span{
+    font-weight: bold;
+}
+.Cart__Products__checkout ul li.cart-total{
+    padding-top: 10px
+}
+.Cart__Products__checkout ul li.cart-total span{
+    color:#e7ab3c;
+}
+.Cart__Products__checkout ul li span{
+    float:right;
+}
+.Cart__Products__checkout .proceed-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#252525;
+    text-transform: uppercase;
+    padding:15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}
+/**/
+.Cart__Products__user--infor h5 {
+    background: var(--bg-header);
+    color: var(--white-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 40px;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.Cart__Products__user--infor i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.Cart__Products__user--infor ul{
+    border: 2px solid #ebebeb;
+    background: #f3f3f3;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:16px;
+    padding-bottom: 20px;
+    position:relative;
+}
+.Cart__Products__user--infor span {
+    color: var(--text-color);
+}
+.Cart__Products__user__btn--edit {
+    background: none;
+    border:none;
+    position:absolute;
+    top: 5px;
+    right:0;
+}
+.Cart__Products__user__btn--edit i {
+    color: #999;
+}
+.Cart__Products__user__btn--edit i:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.Cart__Products__inform--edit {
+    width: 302px;
+    height: 150px;
+    border: 1px solid #888;
+    outline: none;
+    padding: 20px;
+}
+
+.Cart__Products__inform--edit__btn {
+    margin-top: 8px;
+   
+    border-radius: 2px;
 }
 
 /*footer*/
