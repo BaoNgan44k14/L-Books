@@ -5,6 +5,7 @@
     src: url(../fonts/beyond_the_mountains.otf) format('truetype'), url(../fonts/beyond_the_mountains.otf) format('opentype');
 }
  :root {
+    --text-gray: #999;
     --text-color: #333;
     --primary-color: #fa9e1b;
     --white-color: #fff;
@@ -18,6 +19,7 @@
     --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
     --ffer-color: #eda84a;
     --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --bg-admin: rgb(34,45,50);
 }
 * {
     margin: 0;
@@ -31,7 +33,6 @@ body {
     font-size: 14px;
     font-weight: 400;
     background: #fff;
-    color: #a5a5a5;
     overflow-x: hidden;
     
 }
