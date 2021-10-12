@@ -1,5 +1,6 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 @font-face {
     font-family: 'Beyond';
     src: url(../fonts/beyond_the_mountains.otf) format('truetype'), url(../fonts/beyond_the_mountains.otf) format('opentype');
@@ -20,6 +21,7 @@
     --ffer-color: #eda84a;
     --border: linear-gradient(to right, #fa9e1b, #8d4fff);
     --bg-admin: rgb(34,45,50);
+    --box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 * {
     margin: 0;

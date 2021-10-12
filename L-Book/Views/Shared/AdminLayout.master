@@ -29,19 +29,19 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="#"><i class="fas fa-tachometer-alt"></i>
+                    <a href="../Admin/Dashboard.aspx"><i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="active"><i class="fas fa-users" ></i>
+                    <a href="#" class="<%--active--%>"><i class="fas fa-users" ></i>
                     <span>Customer</span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-book-open"></i>
+                    <a href="../Admin/ManagementProduct.aspx"><i class="fas fa-book-open"></i>
                     <span>Products</span>
 
                     </a>
@@ -87,11 +87,11 @@
                 </div>
             </header>
 
-            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+            <div class="page-wrapper">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
                 
-            </asp:ContentPlaceHolder>
-
-            
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
 
 

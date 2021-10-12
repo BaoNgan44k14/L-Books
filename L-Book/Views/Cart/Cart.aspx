@@ -26,7 +26,6 @@
                                 <th scope="col">Đơn giá (VNĐ)</th>
                                 <th scope="col">Tổng cộng (VNĐ)</th>
                                 <th scope="col"></th>
-
                             </tr>
                         </thead>
                         <tbody>

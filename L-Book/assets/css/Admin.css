@@ -36,12 +36,14 @@
     font-size: 1.1rem;
     
 }
+.sidebar-menu a:hover,
 .sidebar-menu a.active {
     background: var(--primary-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 30px 0 0 30px;
     font-weight: 700;
+    
 }
 .sidebar-menu a i{
     font-size: 1.2rem;
@@ -111,7 +113,19 @@
 .user-wrapper i:first-child:hover{
     color: var(--primary-color);
     cursor: pointer;
+    animation: ring ease .5s;
+    
 }
+@keyframes ring{
+  from{
+    transform: rotate(-30deg);
+  }
+
+  to{
+    transform: rotate(30deg);
+  }
+}
+
 .user-wrapper h4 {
     margin:0; 
     font-size: 1rem;
@@ -123,9 +137,152 @@
     font-size: 0.6rem;
     color: #999;
 }
+.page-wrapper {
+    background-color: #f1f5f9;
+    /*padding: 50px 5px;*/
 
-
-.demo {
+}
+/*management */
+.Product__management {
+    table-layout:fixed; 
+    word-wrap: break-word;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    background: #fff;
+}
+.Product__management th {
+    text-transform: uppercase;
+    color: var(--text-color);
+    vertical-align: middle;
+}
+.Product__management img {
+    width: 100%;
+    height: 100%;
+}
+.Product__management button {
+    background: none;
+    border: none;
+    
+}
+.Product__management button i {
+    color: red;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    opacity: .7;
+    
+}
+.Product__management button:first-child i {
+    color: var(--primary-color);
+}
+.Product__management button i:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+.Dashboard-cards {
+    padding: 2rem 1.5rem;
+    /*min-height: calc(100vh -90px);*/
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    /*margin-bottom: 1rem*/
+}
+.card-singer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+   
+}
+.card-singer:first-child h1 {
+    color: #21acdd;
+}
+.card-singer:nth-child(2) h1{
+    color: #63c5de;
+}
+.card-singer:nth-child(3) h1 {
+    color: #fdd630;
+}
+.card-singer:last-child {
     background: var(--violet);
+    color: var(--white-color);
+}
+.card-singer:last-child span, 
+.card-singer:last-child div:last-child i {
+    color: var(--white-color);
+}
+.card-singer h1 {
+    font-weight: 600;
+    font-family: 'Times New Roman';
+    font-size: 2rem;
+}
+.card-singer span {
+    color: grey;
+}
+/*.card-singer i, .card-singer h1 {
+    color: var(--white-color);
+}*/
+.card-singer i {
+    font-size: 2rem;
+    color: var(--violet);
+}
 
+/*product table*/
+.Dashboard-table:first-child {
+    padding-right: 0 !important;
+}
+.Dashboard-table:last-child {
+    padding-left: 0 !important;
+}
+.Product-card {
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
+}
+.Product-table,.Account-table {
+    background: var(--white-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 2px;
+    margin: 10px;
+    min-height: 600px;
+}
+.Product-table__header, .Account-table__header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+    padding: 15px 15px;
+    align-items: self-end;
+}
+.Product-table__header h2, 
+.Account-table__header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+    font-style: oblique;
+    
+}
+.Product-table__header button, .Account-table__header button {
+    outline: none;
+    border: 1px solid var(--yellow);
+    background: var(--yellow);
+    border-radius: 10px;
+    padding: 8px;
+    height: 40px;
+    align-self:center;
+    align-items:center;
+    color: var(--white-color);
+}
+.Product-table__header button:hover, 
+.Account-table__header button:hover {
+    opacity: .9;
+    
+}
+
+.Product-table__body, .Account-table__body {
+    padding: 5px 15px;
 }
