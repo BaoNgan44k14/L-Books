@@ -57,7 +57,7 @@
                                  <i class="fas fa-search" id="search"></i>
                             </div>
                             <div class="header__navbar__container--cart">
-                                <a href="../Cart/Cartproducts.aspx">
+                                <a href="../Cart/Cart.aspx">
                                 <i class="fas fa-shopping-cart"></i>
                                 </a>
                             </div>
@@ -115,16 +115,16 @@
                             <h3 class="footer__heading pb-3">XUẤT XỨ</h3>
                             <ul class="footer__list">
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Trung Quốc</a>
+                                    <a href="#" class="footer__list-link">Trung Quốc</a>
                                 </li>
                                 <li class="footer__list-item">   
-                                    <a href="" class="footer__list-link">Hàn Quốc</a>
+                                    <a href="#" class="footer__list-link">Hàn Quốc</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Việt Nam</a>
+                                    <a href="#" class="footer__list-link">Việt Nam</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Nhật Bản</a>
+                                    <a href="#" class="footer__list-link">Nhật Bản</a>
                                 </li>
                             </ul>
                         </div>
@@ -132,16 +132,16 @@
                                 <h3 class="footer__heading pb-3">SITE MAP</h3>
                                 <ul class="footer__list">
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Trang Chủ</a>
+                                    <a href="#" class="footer__list-link">Trang Chủ</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Sách</a>
+                                    <a href="#" class="footer__list-link">Sách</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Sách bán chạy</a>
+                                    <a href="#" class="footer__list-link">Sách bán chạy</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Giới Thiệu</a>
+                                    <a href="#" class="footer__list-link">Giới Thiệu</a>
                                 </li>
                             </ul>
                             </div>
@@ -204,6 +204,5 @@
 
     </div>
     </form>
-    <script src="../../assets/js/Main.js"></script>
 </body>
 </html>

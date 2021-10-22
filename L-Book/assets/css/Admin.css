@@ -286,3 +286,57 @@
 .Product-table__body, .Account-table__body {
     padding: 5px 15px;
 }
+.gridview {
+    z-index: 100;
+}
+/*Add Product*/
+.modal {
+    display: none;
+}
+.Add-Form {
+    width: 800px;
+    max-height: 600px;
+}
+.Add-Form__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+    border-bottom: 0.5px solid #f1f1f1;
+}
+.Add-Form__heading h3 {
+    margin: 0;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-left: 30px;
+}
+.Add-Form__heading button {
+    background: none;
+    outline: none;
+    border: none;
+   
+}
+.Add-Form__heading button i {
+    font-size: 2rem;
+    color: #999;
+
+}
+.Add-Form__form div div:first-child {
+    margin-right: 0 !important;
+}
+
+.Add-Form__form div div:last-child {
+    margin-left: 0 !important;
+}
+.Add-Form__form div div, .Add-Form__form div {
+    margin-bottom: 0 !important;
+}
+.btn-add {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:10px;
+
+}

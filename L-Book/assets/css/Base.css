@@ -67,3 +67,33 @@ ul, li, a {
         opacity: 1;
     }
 }
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    /* z-index: thuộc tính nào có số cao nhất thì sẽ đc đè lên trên  */
+    animation: fadein linear 0.1s;
+    /*display: none;*/
+
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4)
+}
+.modal__body{
+    /* width: 500px; */
+    /* height: 500px; */
+    background-color: var(--white-color);
+    margin: auto;
+    border-radius: 5px;
+    /* position: relative; */
+    z-index: 1;
+    animation: Growth linear 0.1s;
+    --Growth-from: 0.7;
+    --Growth-to: 1;
+}

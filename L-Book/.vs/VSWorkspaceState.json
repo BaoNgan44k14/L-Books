@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\images",
+    "\\library",
     "\\Views",
-    "\\Views\\Admin"
+    "\\Views\\Admin",
+    "\\Views\\Cart",
+    "\\Views\\Home"
   ],
+  "SelectedNode": "\\assets\\images\\top1.PNG",
   "PreviewInSolutionExplorer": false
 }
