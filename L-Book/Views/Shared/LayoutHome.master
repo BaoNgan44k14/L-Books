@@ -66,13 +66,13 @@
                                     <div class="header__navbar--user">
                                         <ul class="header__navbar-user-menu">
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="">Thông tin tài khoản</a>
+                                                <a href="#">Thông tin tài khoản</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="">Đổi mật khẩu</a>
+                                                <a href="#">Đổi mật khẩu</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="">Đăng xuất</a>
+                                                <a href="#">Đăng xuất</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -98,16 +98,16 @@
                                 <h3 class="footer__heading pb-3">THỂ LOẠI</h3>
                                 <ul class="footer__list">
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Tiểu thuyết</a>
+                                    <a href="#" class="footer__list-link">Tiểu thuyết</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Truyện Tranh</a>
+                                    <a href="#" class="footer__list-link">Truyện Tranh</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Giáo Trình</a>
+                                    <a href="#" class="footer__list-link">Giáo Trình</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Thiếu Nhi</a>
+                                    <a href="#" class="footer__list-link">Thiếu Nhi</a>
                                 </li>
                             </ul>
                             </div>
@@ -149,13 +149,13 @@
                             <h3 class="footer__heading pb-3">GIẢI ĐÁP</h3>
                             <ul class="footer__list">
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Cách thức mua hàng</a>
+                                    <a href="#" class="footer__list-link">Cách thức mua hàng</a>
                                 </li>
                                 <li class="footer__list-item">   
-                                    <a href="" class="footer__list-link">Chế độ giao hàng</a>
+                                    <a href="#" class="footer__list-link">Chế độ giao hàng</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Đặt hàng qua tổng đài</a>
+                                    <a href="#" class="footer__list-link">Đặt hàng qua tổng đài</a>
                                 </li>
 
                             </ul>
@@ -164,16 +164,16 @@
                             <h3 class="footer__heading pb-3">THÔNG TIN</h3>
                             <ul class="footer__list">
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Tuyển dụng</a>
+                                    <a href="#" class="footer__list-link">Tuyển dụng</a>
                                 </li>
                                 <li class="footer__list-item">   
-                                    <a href="" class="footer__list-link">Điều khoản</a>
+                                    <a href="#" class="footer__list-link">Điều khoản</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Chính sách bảo mật</a>
+                                    <a href="#" class="footer__list-link">Chính sách bảo mật</a>
                                 </li>
                                 <li class="footer__list-item">
-                                    <a href="" class="footer__list-link">Chính Hãng</a>
+                                    <a href="#" class="footer__list-link">Chính Hãng</a>
                                 </li>
                             </ul>
                         </div>

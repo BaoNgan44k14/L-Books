@@ -18,7 +18,7 @@
             <div class=" Product-table">
                 <div class="Product-table__header">
                     <h2>Quản Lý Sản Phẩm</h2>
-                    <button class="Product-management__newProduct">Thêm sản phẩm   <i class="fas fa-plus"></i></button>
+                    <button id="Product-management__newProduct" type="submit">Thêm sản phẩm <i class="fas fa-plus"></i></button>
                 </div>
                 <div class="Product-table__body">
                     <%--<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" DataKeyNames="BookID" DataSourceID="SqlDataSource2" Width="100%">
@@ -121,7 +121,6 @@
                                 </table>
                             </div>
                        </div>
-
                 
                   </div>
                </div>
@@ -132,14 +131,12 @@
 
     
     <div class="modal">
-        <div class="modal__overlay">
-        </div>
         <div class="modal__body"> 
             <div class="Add-Form">
                 <div class="Add-Form__Container container">
                     <div class="Add-Form__heading">
                         <h3>Thêm tài khoản</h3>
-                        <button><i class="far fa-times-circle"></i></button>
+                        <button class="js-modal-close"><i class="far fa-times-circle"></i></button>
                     </div>
                     <div class="Add-Form__form">
                         <div class="row">
@@ -204,10 +201,6 @@
                 </div>
 
             </div>
-
-
-
-
         </div>
     </div>
     <script>
@@ -224,10 +217,21 @@
                 buttonClicked.parentElement.parentElement.parentElement.remove();
             } 
         }
-
-
-
-
+        // Thêm sản phẩm 
+    </script>
+    <script>
+        const addBtns = document.querySelector('#Product-management__newProduct');
+        const modal = document.querySelector('.modal');
+        const modalContainer = document.querySelector('.modal__body');
+        const modalClose = document.querySelector('.js-modal-close');
+        // Thêm class open cho model        function showAddProducts() {
+            modal.classList.add('open');
+        }        // Bỏ class open cho model        function hideAddProducts() {
+            modal.classList.remove('open');
+        }        addBtns.addEventListener('click', showAddProducts);        modalClose.addEventListener('click', hideAddProducts);
+        modal.addEventListener('click', hideAddProducts)        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
     </script>
 </asp:Content>
 
