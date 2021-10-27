@@ -36,29 +36,29 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="<%--active--%>"><i class="fas fa-users" ></i>
-                    <span>Customer</span>
+                    <a href="#"><i class="fas fa-users" ></i>
+                    <span>Quản lý tài khoản</span>
 
                     </a>
                 </li>
                 <li>
                     <a href="../Admin/ManagementProduct.aspx"><i class="fas fa-book-open"></i>
-                    <span>Products</span>
+                    <span>Quản lý sản phẩm</span>
 
                     </a>
                 </li>
                  <li>
                     <a href="#"><i class="fas fa-dolly-flatbed" ></i>
-                    <span>Orders</span>
+                    <span>Quản lý đơn hàng</span>
 
                     </a>
                 </li>
-                <li>
+                <%--<li>
                     <a href="#"><i class="fas fa-sitemap"></i>
                     <span>Tasks</span>
 
                     </a>
-                </li>
+                </li>--%>
             </ul>
         </div>
 

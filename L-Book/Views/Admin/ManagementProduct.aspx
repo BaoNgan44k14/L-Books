@@ -18,7 +18,7 @@
             <div class=" Product-table">
                 <div class="Product-table__header">
                     <h2>Quản Lý Sản Phẩm</h2>
-                    <button id="Product-management__newProduct" type="submit">Thêm sản phẩm <i class="fas fa-plus"></i></button>
+                    <button id="Product-management__newProduct" type="button">Thêm sản phẩm <i class="fas fa-plus"></i></button>
                 </div>
                 <div class="Product-table__body">
                     <%--<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" DataKeyNames="BookID" DataSourceID="SqlDataSource2" Width="100%">
@@ -182,7 +182,7 @@
                           <div class="form-group col ">
                             <asp:Label ID="lbl_sotrang" runat="server" Text="Số trang" CssClass="form-label" for="txt_sotrang"></asp:Label>
                             <asp:TextBox ID="txt_sotrang" runat="server" CssClass="form-control authentication-form" TextMode="Number" min="1"></asp:TextBox>
-                                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng đnhập số trang" ControlToValidate="txt_sotrang" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
+                                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập số trang" ControlToValidate="txt_sotrang" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
                           </div>
                           <div class="form-group col ">
                             <asp:Label ID="lbl_tacgia" runat="server" Text="Tác Giả" CssClass="form-label" for="txt_tacgia"></asp:Label>

@@ -133,10 +133,10 @@
                         </li>
                         
                     </ul>
-                  <%--  <ul>
+                   <%-- <ul>
                         <asp:TextBox ID="Txt__informCart" runat="server" TextMode="MultiLine" CssClass="Cart__Products__inform--edit"></asp:TextBox>
                         <div class="d-flex justify-content-end">
-                        <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Đồng Ý" CssClass="Cart__Products__inform--edit__btn"></dx:ASPxButton>
+                        <ASPxButton ID="ASPxButton1" runat="server" Text="Đồng Ý" CssClass="Cart__Products__inform--edit__btn"></ASPxButton>
                         </div>
                     </ul>--%>
                 </div>
