@@ -636,7 +636,7 @@
     margin-top: 12px;
 }
 
-.form_submit_button {
+.form_submit_button, .profile-edit {
     font-size: 13px;
     font-weight: 700;
     color: #fff;
@@ -1238,7 +1238,54 @@
    
     border-radius: 2px;
 }
+/*Profile*/
+.Profile {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(https://www.cnet.com/a/img/bgNEsHDGyYEM70Mq7YyB6ceGXH4=/1200x675/2020/03/25/c159b68f-4fde-4365-9df0-4264d1b22537/gettyimages-1152165652.jpg) no-repeat;
+    background-size: cover;
+}
+.Profile-information {
+    margin: 100px auto;
+    border-radius: 10px;
+    background-image: var(--bg-section);
+    color: var(--white-color);
+}
+.profile-image {
+    padding: 30px 0;
+    display: flex;
+    justify-content:center;
+}
+.user-image {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 90%;
+    border-radius: 50%;
+    background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png);
+    background-size: contain;
+    /*background-color: var(--white-color);*/
+}
+.user-profile {
+    border-left: 1px solid #fff;
+    margin: 20px 0;
+}
+.profile-title h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 30px 0;
+    text-align: center;
+}
+.profile-btn {
+    float: right;
+    padding: 20px 10px;
+}
 
+.profile-edit {
+    margin: 0;
+}
 /*footer*/
 .footer {
     background-color: #31124b;

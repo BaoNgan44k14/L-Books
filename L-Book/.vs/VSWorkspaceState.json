@@ -2,13 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\images",
-    "\\library",
+    "\\assets\\css",
     "\\Views",
-    "\\Views\\Admin",
-    "\\Views\\Cart",
-    "\\Views\\Home"
+    "\\Views\\Home",
+    "\\Views\\Shared",
+    "\\Views\\User"
   ],
-  "SelectedNode": "\\assets\\images\\top1.PNG",
+  "SelectedNode": "\\Views\\User\\Information.aspx",
   "PreviewInSolutionExplorer": false
 }

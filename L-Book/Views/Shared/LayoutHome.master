@@ -52,10 +52,10 @@
                     
                     <div class="col-3">
                         <div class="header__navbar__container--icon d-flex">
-                            <div class="header__navbar__container--search d-flex">
+                            <%--<div class="header__navbar__container--search d-flex">
                                
                                  <i class="fas fa-search" id="search"></i>
-                            </div>
+                            </div>--%>
                             <div class="header__navbar__container--cart">
                                 <a href="../Cart/Cart.aspx">
                                 <i class="fas fa-shopping-cart"></i>
@@ -69,7 +69,7 @@
                                                 <a href="#">Thông tin tài khoản</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="#">Đổi mật khẩu</a>
+                                                <a href="#">Lịch sử mua hàng</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
                                                 <a href="#">Đăng xuất</a>

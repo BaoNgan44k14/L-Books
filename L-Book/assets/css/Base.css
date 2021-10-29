@@ -85,15 +85,4 @@ ul, li, a {
     height: 100%;
     background-color: rgba(0,0,0,0.4)
 }
-.modal__body{
-    /* width: 500px; */
-    /* height: 500px; */
-    background-color: var(--white-color);
-    margin: auto;
-    border-radius: 5px;
-    /* position: relative; */
-    z-index: 1;
-    animation: Growth linear 0.1s;
-    --Growth-from: 0.7;
-    --Growth-to: 1;
-}
+
