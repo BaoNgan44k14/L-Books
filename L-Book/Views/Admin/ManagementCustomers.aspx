@@ -100,26 +100,24 @@
                                 </tr>
                                 </tbody>
                             </table>--%>
-                            <asp:GridView ID="Grv_taikhoan" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSource1" PageSize="8">
-                                <Columns>
-                                    <asp:BoundField DataField="UserID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
-                                    <asp:BoundField DataField="UserName" HeaderText="Tên tài khoản" SortExpression="UserName" />
-                                    <asp:BoundField DataField="UserPassword" HeaderText="Mật khẩu" SortExpression="UserPassword" />
-                                    <asp:BoundField DataField="FullName" HeaderText="Họ tên" SortExpression="FullName" />
-                                    <asp:BoundField DataField="Birthday" HeaderText="Ngày sinh" SortExpression="Birthday" />
-                                    <asp:BoundField DataField="UserAddress" HeaderText="Địa chỉ" SortExpression="UserAddress" />
-                                    <asp:BoundField DataField="PhoneNumber" HeaderText="Số điện thoại" SortExpression="PhoneNumber" />
-                                    
+                     <asp:GridView ID="Grv_taikhoan" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSource1" PageSize="8">
+                               <Columns>
+                                    <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
+                                    <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
+                                    <asp:BoundField DataField="UserPassword" HeaderText="UserPassword" SortExpression="UserPassword" />
+                                    <asp:BoundField DataField="FullName" HeaderText="FullName" SortExpression="FullName" />
+                                    <asp:BoundField DataField="Birthday" HeaderText="Birthday" SortExpression="Birthday" />
+                                    <asp:BoundField DataField="UserAddress" HeaderText="UserAddress" SortExpression="UserAddress" />
+                                    <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
                                     <asp:TemplateField HeaderText="Tác vụ">
                                         <ItemTemplate>
                                             <button class="edit" type="button"><i class="fas fa-pen"></i></button>
                                             <button class="delete"><i class="far fa-trash-alt"></i></button>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    
                                 </Columns>
-                            </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryBookConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+                    </asp:GridView>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryBookConnectionString2 %>" SelectCommand="SELECT [UserID], [RoleID], [UserName], [UserPassword], [FullName], [Gender], [Birthday], [UserAddress], [PhoneNumber] FROM [Users]"></asp:SqlDataSource>
                         </div>
                     </div>
                </div>
@@ -152,10 +150,21 @@
                                 <asp:TextBox ID="txt_ngaysinh" runat="server" CssClass="form-control authentication-form" TextMode="Date"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <asp:Label ID="lbl_tentaikhoan" runat="server" Text="Tên Tài Khoản" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
-                            <asp:TextBox ID="txt_tentaikhoan" runat="server" CssClass="form-control authentication-form"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Vui lòng nhập tên tài khoản" ControlToValidate="txt_tentaikhoan" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
+                        <div class="row">
+                            <div class="form-group col">
+                                <asp:Label ID="lbl_tentaikhoan" runat="server" Text="Tên Tài Khoản" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
+                                <asp:TextBox ID="txt_tentaikhoan" runat="server" CssClass="form-control authentication-form"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Vui lòng nhập tên tài khoản" ControlToValidate="txt_tentaikhoan" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
+                            </div>    
+                            <div class="form-group col">
+                                <asp:Label ID="lbl_gioitinh" runat="server" Text="Giới tính" CssClass="form-label" for="txt_gioitinh"></asp:Label>
+                                 <asp:DropDownList ID="dd_theloai" runat="server" CssClass="form-control authentication-form">
+                                    <asp:ListItem>Nam</asp:ListItem>
+                                    <asp:ListItem>Nữ</asp:ListItem>
+                                    <asp:ListItem>Khác</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng chọn giới tính" ControlToValidate="txt_tentaikhoan" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
+                            </div>
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lbl_matkhau" runat="server" Text="Mật Khẩu" CssClass="form-label" for="txt_matkhau"></asp:Label>
@@ -205,11 +214,23 @@
                                 <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control authentication-form" TextMode="Date"></asp:TextBox>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <asp:Label ID="Label2" runat="server" Text="Tên Tài Khoản" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control authentication-form"></asp:TextBox>
+                         <div class="row">
+                            <div class="form-group col">
+                                <asp:Label ID="Label2" runat="server" Text="Tên Tài Khoản" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
+                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control authentication-form"></asp:TextBox>
                             
-                        </div>
+                            </div>
+                              <div class="form-group col">
+                                <asp:Label ID="Label8" runat="server" Text="Giới tính" CssClass="form-label" for="txt_gioitinh"></asp:Label>
+                                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control authentication-form">
+                                    <asp:ListItem>Nam</asp:ListItem>
+                                    <asp:ListItem>Nữ</asp:ListItem>
+                                    <asp:ListItem>Khác</asp:ListItem>
+                                </asp:DropDownList>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Vui lòng chọn giới tính" ControlToValidate="txt_tentaikhoan" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
+                            </div>
+
+                         </div>
                         <div class="form-group">
                             <asp:Label ID="Label3" runat="server" Text="Mật Khẩu" CssClass="form-label" for="txt_matkhau"></asp:Label>
                             <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control authentication-form" TextMode="Password"></asp:TextBox>

@@ -679,7 +679,7 @@
     position: absolute;
     bottom: 100%; 
 }
-.Product__catalogue__container .row {
+.Product__catalogue__container .row , .History_catalogue__container .row {
     justify-content: space-between;
     align-items: center;
     height: 94px;
@@ -702,6 +702,11 @@
     flex-grow: 1;
     justify-content: center;
 }
+.Product__catalogue__container__tab i {
+    font-size: 1.5rem;
+    margin: 2rem .8rem;
+    color: var(--black);
+}
 .Product__catalogue__container__tab:first-child {
     border-top-left-radius: 94px;
     padding-left: 7px;
@@ -712,8 +717,9 @@
     padding-right: 7px;
 }
 
-.Product__catalogue__container__tab:hover,
-.Product__catalogue__container__tab:active,
+.Product__catalogue__container__tab:hover, 
+.Product__catalogue__container__tab:hover i,
+.Product__catalogue__container__tab.active i,
 .Product__catalogue__container__tab.active {
     background-color: var(--yellow);
     color: var(--white-color);
@@ -969,7 +975,7 @@
 }
 .Detail__rating i:nth-child(2) {
     opacity: .75;
-}
+}Product_catalogue__container
 .Detail__rating i:nth-child(3) {
     opacity: .85;
 }
@@ -1285,6 +1291,24 @@
 
 .profile-edit {
     margin: 0;
+}
+/*History*/
+.History {
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(https://media.istockphoto.com/photos/old-ancient-books-on-bookshelf-history-book-vintage-collection-picture-id1182820078?k=20&m=1182820078&s=170667a&w=0&h=hLz0uJtJRkuyH2QsJuRC2YEuapNE6JEkdaNMlRc9uog=) no-repeat;
+    background-size: cover;
+}
+.History_catalogue__container {
+    position: absolute;
+    bottom: 100%;
+    left: 11%;
+}
+.history-waiting-order {
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin: 80px 50px;
+    box-shadow: var(--box-shadow);
 }
 /*footer*/
 .footer {

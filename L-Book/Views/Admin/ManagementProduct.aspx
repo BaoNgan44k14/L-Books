@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/AdminLayout.master" AutoEventWireup="true" CodeFile="ManagementProduct.aspx.cs" Inherits="Views_Admin_ManagementProduct" %>
 
-<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
 
@@ -198,24 +197,25 @@
                                 </tr>
                                 </tbody>
                             </table>--%>
-                            <asp:GridView ID="Grv_taikhoan" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="BookID" DataSourceID="SqlDataSource1" PageSize="8">
-                                <Columns>
-                                    <asp:BoundField DataField="BookID" HeaderText="Mã sách" InsertVisible="False" ReadOnly="True" SortExpression="BookID" />
-                                    <asp:BoundField DataField="BookName" HeaderText="Tên sách" SortExpression="BookName" />
+                        <asp:GridView ID="Grv_taikhoan" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="BookID" DataSourceID="SqlDataSource1" PageSize="8">
+                                    <Columns>
+                                    <asp:BoundField DataField="BookID" HeaderText="BookID" InsertVisible="False" ReadOnly="True" SortExpression="BookID" />
+                                    <asp:BoundField DataField="BookName" HeaderText="BookName" SortExpression="BookName" />
                                    
-                                    <asp:BoundField DataField="BookPrice" HeaderText="Đơn giá" SortExpression="BookPrice" />
-                                    <asp:BoundField DataField="Quantity" HeaderText="Số lượng" SortExpression="Quantity" />
-                                    <asp:BoundField DataField="Sole" HeaderText="Đã Bán" SortExpression="Sole" />
+                                    <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+                                    <asp:BoundField DataField="Sole" HeaderText="Sole" SortExpression="Sole" />
+                                    <asp:BoundField DataField="BookPrice" HeaderText="BookPrice" SortExpression="BookPrice" />
                                     <asp:TemplateField HeaderText="Tác vụ">
-                                         <ItemTemplate>
+                                        <ItemTemplate>
                                             <button class="edit" type="button"><i class="fas fa-pen"></i></button>
                                             <button class="delete"><i class="far fa-trash-alt"></i></button>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    
                                 </Columns>
                             </asp:GridView>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryBookConnectionString %>" SelectCommand="SELECT [BookID], [BookName], [Quantity], [Sole], [BookPrice] FROM [Book]"></asp:SqlDataSource>
+                           
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryBookConnectionString2 %>" SelectCommand="SELECT [BookID], [BookName], [Quantity], [Sole], [BookPrice] FROM [Book]"></asp:SqlDataSource>
+                           
                         </div>
                     </div>
                </div>

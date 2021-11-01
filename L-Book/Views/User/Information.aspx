@@ -23,7 +23,7 @@
                 </div>
                 <div class="Add-Form__form">
                         <div class="form-group">
-                            <asp:Label ID="lbl_tentaikhoan" runat="server" Text="Tên Tài Khoản" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
+                            <asp:Label ID="lbl_tentaikhoan" runat="server" Text="Tên Đăng Nhập" CssClass="form-label" for="txt_tentaikhoan"></asp:Label>
                             <asp:TextBox ID="txt_tentaikhoan" runat="server" CssClass="form-control authentication-form"></asp:TextBox>
 <%--                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Vui lòng nhập tên tài khoản" ControlToValidate="txt_tentaikhoan" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>--%>
                         </div>

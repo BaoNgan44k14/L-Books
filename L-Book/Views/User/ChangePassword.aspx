@@ -61,12 +61,26 @@
     </div>
 
 
-     <!-- Liên kết vs file js -->   
-    <script src="../../assets/js/Validator.js"></script>    <script>        // Output sẽ nhận được         Validator({
-            form: '#form1',            errorSelector: '.form-message',            rules: [              Validator.isRequired('#txt_oldpass'),              Validator.minLength('#txt_newpass', 6),              Validator.isConfirmed('#txt_newpass2', function () {
+     <!-- Liên kết vs file js -->
+   
+    <script src="../../assets/js/Validator.js"></script>
+    <script>
+        // Output sẽ nhận được 
+        Validator({
+            form: '#form1',
+            errorSelector: '.form-message',
+            rules: [
+              Validator.isRequired('#txt_oldpass'),
+              Validator.minLength('#txt_newpass', 6),
+              Validator.isConfirmed('#txt_newpass2', function () {
                   return document.querySelector('#form1 #txt_newpass').value
-              }, 'Mật khẩu nhập lại không chính xác')                  // message            ]
-        });    </script>
+              }, 'Mật khẩu nhập lại không chính xác')
+                  // message
+            ]
+        });
+
+    </script>
+
 
 
 </body>

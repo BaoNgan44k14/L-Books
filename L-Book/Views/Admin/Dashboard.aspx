@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/AdminLayout.master" AutoEventWireup="true" CodeFile="Dashboard.aspx.cs" Inherits="Views_Admin_Dashboard" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxSpreadsheet.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSpreadsheet" TagPrefix="dx" %>
-
-<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -65,16 +62,8 @@
                         <button>Xem thêm <i class="fas fa-angle-double-right"></i></button>
                     </div>
                     <div class="Product-table__body">
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" DataKeyNames="BillID" DataSourceID="SqlDataSource1" Width="100%">
-                            <Columns>
-                                <asp:BoundField DataField="BillID" HeaderText="BillID" InsertVisible="False" ReadOnly="True" SortExpression="BillID" />
-                                <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
-                                <asp:BoundField DataField="CreateDate" HeaderText="CreateDate" SortExpression="CreateDate" />
-                                <asp:CheckBoxField DataField="StatusBill" HeaderText="StatusBill" SortExpression="StatusBill" />
-                                <asp:CheckBoxField DataField="Confirm" HeaderText="Confirm" SortExpression="Confirm" />
-                            </Columns>
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" Width="100%">
                         </asp:GridView>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LibraryBookConnectionString %>" SelectCommand="SELECT * FROM [Bill]"></asp:SqlDataSource>
                     <%--<table class="table table-hover text-center">
                         <thead>
                             <tr>
@@ -168,12 +157,7 @@
                         <button>Xem <i class="fas fa-angle-double-right"></i></button>
                     </div>
                     <div class="Account-table__body">
-                        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" DataKeyNames="BillID" DataSourceID="SqlDataSource1" Width="100%">
-                            <Columns>
-                                <asp:BoundField DataField="BillID" HeaderText="BillID" InsertVisible="False" ReadOnly="True" SortExpression="BillID" />
-                                <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
-                                <asp:BoundField DataField="CreateDate" HeaderText="CreateDate" SortExpression="CreateDate" />
-                            </Columns>
+                        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" BorderStyle="None" CssClass="table table-hover text-center" Width="100%">
                         </asp:GridView>
                        
                       <%--  <table class="table table-hover text-center">

@@ -11,6 +11,7 @@
     <link href="../../assets/css/Base.css" rel="stylesheet" />
     <link href="../../assets/css/Grid.css" rel="stylesheet" />
     <link href="../../assets/css/Style.css" rel="stylesheet" />
+    <link href="../../assets/css/Admin.css" rel="stylesheet" />
     <link href="../../assets/css/Responsive.css" rel="stylesheet" />
     <link href="../../assets/css/Action.css" rel="stylesheet" />
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -66,10 +67,10 @@
                                     <div class="header__navbar--user">
                                         <ul class="header__navbar-user-menu">
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="#">Thông tin tài khoản</a>
+                                                <a href="../User/Information.aspx">Thông tin tài khoản</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
-                                                <a href="#">Lịch sử mua hàng</a>
+                                                <a href="../User/History.aspx">Lịch sử mua hàng</a>
                                             </li>
                                             <li class="header__navbar-user-menu-items">
                                                 <a href="#">Đăng xuất</a>
