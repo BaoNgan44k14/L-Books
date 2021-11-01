@@ -22,15 +22,15 @@
     <div class="header">
         <div class="header__topbar">
             <div class="container header__topbar__container">
-                <%--<ul class="header__topbar__container--authercation  header__topbar__nologin">
+                <ul class="header__topbar__container--authercation  header__topbar__nologin">
                     <li><a href="../User/Login.aspx">Login</a></li>
                     <li><a href="#">|</a></li>
                     <li><a href="../User/Register.aspx">Register</a></li>
-                </ul>--%>
-
-                <ul class="header__topbar__container--authercation <%--header__topbar__userlogin--%>">
-                    <li><a href="#">Nguyễn Thị Bảo Ngân</a></li>
                 </ul>
+
+            <%--   <ul class="header__topbar__container--authercation header__topbar__userlogin">
+                    <li><a href="#">Nguyễn Thị Bảo Ngân</a></li>
+                </ul>--%>
             </div>
         </div>
 
