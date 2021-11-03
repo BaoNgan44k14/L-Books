@@ -17,89 +17,6 @@
                 <div class="table__body">
                     <div class="table-wrapper">
                         <div class="table-responsive">
-                            <%-- <table class="table table-hover Product__management">
-                                <thead>
-                                    <tr>
-                                        <th>Mã sách</th>    
-                                        <th>Tên sách</th>    
-                                        <th>Hình ảnh</th>    
-                                        <th>Đơn giá</th>    
-                                        <th>Mô tả</th>    
-                                        <th>Tổng số lượng đã bán</th>    
-                                        <th>Tổng số lượng tồn</th>    
-                                        <th>Tác vụ</th>                           
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <tr class="">
-                                    <td>1</td>
-                                    <td>5cm trên giây</td>
-                                    <td>
-                                        <img src="../../assets/images/top4.PNG" alt="Alternate Text" /></td>
-                                    <td>150.000</td>
-                                    <td >
-                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>
-                                        <button class="edit_products" type="button"><i class="fas fa-pen"></i></button>
-                                        <button class="Cart__Product__tab--delete"><i class="far fa-trash-alt"></i></button>
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <td>1</td>
-                                    <td>5cm trên giây</td>
-                                    <td>
-                                        <img src="../../assets/images/top3.PNG" />
-
-                                    </td>
-                                    <td>150.000</td>
-                                    <td >
-                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>
-                                        <button class="edit_products" type="button"><i class="fas fa-pen"></i></button>
-                                        <button class="Cart__Product__tab--delete"><i class="far fa-trash-alt"></i></button>
-
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <td>1</td>
-                                    <td>5cm trên giây</td>
-                                    <td>
-                                        <img src="../../assets/images/top1.PNG" alt="Alternate Text" /></td>
-                                    <td>150.000</td>
-                                    <td >
-                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>
-                                        <button class="edit_products" type="button"><i class="fas fa-pen"></i></button>
-                                        <button class="Cart__Product__tab--delete"><i class="far fa-trash-alt"></i></button>
-                                    </td>
-                                </tr>
-                                <tr class="">
-                                    <td>1</td>
-                                    <td>5cm trên giây</td>
-                                    <td>
-                                        <img src="../../assets/images/top2.PNG" alt="Alternate Text" /></td>
-                                    <td>150.000</td>
-                                    <td >
-                                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    </td>
-                                    <td>40</td>
-                                    <td>40</td>
-                                    <td>
-                                        <button class="edit_products" type="button"><i class="fas fa-pen"></i></button>
-                                        <button class="Cart__Product__tab--delete"><i class="far fa-trash-alt"></i></button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>--%>
                      <asp:GridView ID="Grv_taikhoan" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSource1" PageSize="8">
                                <Columns>
                                     <asp:BoundField DataField="UserID" HeaderText="UserID" InsertVisible="False" ReadOnly="True" SortExpression="UserID" />
@@ -170,7 +87,7 @@
                             <asp:Label ID="lbl_matkhau" runat="server" Text="Mật Khẩu" CssClass="form-label" for="txt_matkhau"></asp:Label>
                             <asp:TextBox ID="txt_matkhau" runat="server" CssClass="form-control authentication-form" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập mật khẩu" ControlToValidate="txt_matkhau" CssClass="form-message" ValidationGroup="Themsanpham"></asp:RequiredFieldValidator>
-                          </div>
+                         </div>
                         <div class="row">
                           <div class="form-group col ">
                             <asp:Label ID="lbl_diachi" runat="server" Text="Địa chỉ" CssClass="form-label" for="txt_diachi"></asp:Label>
@@ -183,10 +100,9 @@
                         </div>
                     </div>
                     <div class="btn-add">
-                    <asp:Button Text="Thêm" CssClass="btn btn-outline-warning " runat="server" ValidationGroup="Themsanpham" />
+                         <asp:Button Text="Thêm" CssClass="btn btn-outline-warning " runat="server" ValidationGroup="Themsanpham" />
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

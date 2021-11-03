@@ -47,10 +47,14 @@
 
                     </a>
                 </li>
+                <li class="sidebar-menu-item">
+                    <a href="../Admin/ManagementCatalogy.aspx" ><i class="far fa-list-alt"></i>
+                    <span>Catelogy</span>
+                    </a>
+                </li>
                  <li class="sidebar-menu-item">
                     <a href="../Admin/Orders.aspx" ><i class="fas fa-dolly-flatbed"></i>
                     <span>Orders</span>
-
                     </a>
                 </li>
                 <%--<li>
